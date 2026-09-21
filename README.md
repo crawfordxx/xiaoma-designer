@@ -21,9 +21,30 @@
 ## 特性
 
 - 🧠 **可解释**：每张图的颜色、字体、版式、风格都有决策依据，可复用可迭代
-- 📚 **10 个场景案例**：文旅、活动、品牌、新品、公益、餐饮、播客、书籍、App 插画、节气借势，各带占位符提示词模板
+- 📚 **10 个场景案例（全部真实出图验证）**：文旅、活动、品牌、新品、公益、餐饮、播客、书籍、App 插画、节气借势，各带占位符提示词模板与成图评审
 - 🔌 **生图模型无关**：不绑定任何生图服务——产出设计决策 + 结构化提示词 + 评审闭环，对接你自行接入的任何图像生成能力（本地或 API 均可）；需要精确版式时可让 Agent 另出 HTML/SVG
 - 🌏 **中文友好**：中文排版的字重/对齐/竖排/文化色彩差异均有专门规则
+
+## 案例图鉴
+
+全部由同一套「策略 → 规范 → 风格 → 提示词」流程生成，点击文件名查看完整决策链：
+
+<table>
+  <tr>
+    <td align="center" width="20%"><img src="examples/qingdao-poster.png" width="100%"><br><a href="examples/00-qingdao-tourism.md"><sub><b>00 城市文旅</b> · 复古旅行海报</sub></a></td>
+    <td align="center" width="20%"><img src="examples/event-music-festival.png" width="100%"><br><a href="examples/01-event-music-festival.md"><sub><b>01 音乐节活动</b> · 孟菲斯</sub></a></td>
+    <td align="center" width="20%"><img src="examples/brand-campaign.png" width="100%"><br><a href="examples/02-brand-campaign.md"><sub><b>02 品牌形象</b> · 极简主义</sub></a></td>
+    <td align="center" width="20%"><img src="examples/product-launch.png" width="100%"><br><a href="examples/03-product-launch.md"><sub><b>03 新品发布</b> · 瑞士国际主义</sub></a></td>
+    <td align="center" width="20%"><img src="examples/public-welfare.png" width="100%"><br><a href="examples/04-public-welfare.md"><sub><b>04 公益倡导</b> · 负空间概念</sub></a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="examples/food-beverage.png" width="100%"><br><a href="examples/05-food-beverage.md"><sub><b>05 餐饮美食</b> · 纪实烟火</sub></a></td>
+    <td align="center"><img src="examples/podcast-cover.png" width="100%"><br><a href="examples/06-podcast-cover.md"><sub><b>06 播客封面</b> · 概念极简</sub></a></td>
+    <td align="center"><img src="examples/book-cover.png" width="100%"><br><a href="examples/07-book-cover.md"><sub><b>07 书籍封面</b> · 超现实</sub></a></td>
+    <td align="center"><img src="examples/app-illustration.png" width="100%"><br><a href="examples/08-app-illustration.md"><sub><b>08 App 插画</b> · 扁平</sub></a></td>
+    <td align="center"><img src="examples/seasonal-festival.png" width="100%"><br><a href="examples/09-seasonal-festival.md"><sub><b>09 节气借势</b> · 水墨</sub></a></td>
+  </tr>
+</table>
 
 ## 安装
 
@@ -56,17 +77,18 @@ xiaoma-designer/
 │   ├── style-dictionary.md       # 表现层：艺术风格词典
 │   └── review-rubric.md          # 评分表、高频扣分点、A/B 迭代法
 ├── examples/
-│   ├── README.md                 # 10 场景案例索引
-│   ├── 00-qingdao-tourism.md     # 城市文旅海报（✅已验证出图）
-│   ├── 01-event-music-festival.md
-│   ├── 02-brand-campaign.md
-│   ├── 03-product-launch.md
-│   ├── 04-public-welfare.md
-│   ├── 05-food-beverage.md
-│   ├── 06-podcast-cover.md
-│   ├── 07-book-cover.md
-│   ├── 08-app-illustration.md
-│   └── 09-seasonal-festival.md
+│   ├── README.md                 # 10 场景案例索引 + 图鉴
+│   ├── 00-qingdao-tourism.md     # ┐
+│   ├── 01-event-music-festival.md│  │
+│   ├── 02-brand-campaign.md      #  │  每个案例：
+│   ├── 03-product-launch.md      #  │  策略推演 → 规范决策 → 风格选择
+│   ├── 04-public-welfare.md      #  │  → 提示词模板 → 成图 → 评审
+│   ├── 05-food-beverage.md       #  │
+│   ├── 06-podcast-cover.md       #  │
+│   ├── 07-book-cover.md          #  │
+│   ├── 08-app-illustration.md    #  │
+│   ├── 09-seasonal-festival.md   # ┘
+│   └── *.png                     # 10 张真实出图
 └── LICENSE                       # MIT
 ```
 
